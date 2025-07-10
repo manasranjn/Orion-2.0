@@ -208,3 +208,36 @@ Attributes of Table:-
 5. collspan:- It is used to merge the cells.
 6. rowspan:- It is used to merge the rows.
 7. bgcolor:- It is used to change the background color of a cell or the entire table.
+
+# Form:-
+Form is a HTML inbuilt structure used to accept inputs from the user in the form of data.
+Tags used to create a form:
+1. <form>..</form>
+   -It is used to create the form structure.
+2. <label>..<label>
+   -It is used to print the name for the inputs.
+3. <input>
+   -It is used to create an element that takes different types of inputs from the user.
+   Attributes of Input tag:- 
+   type:- "text", "date", "range", "submit", "reset", "tel", "number", "radio", "checkbox", "button", "file", "email", "password", "image"
+   - name :- It is used to write identical names for radio buttons.
+   - for :- It is used to label tag to build a connection between adjacent input tag.
+   - required :- It is used to make the input field mandatory to be filled.
+   - placeholder :- It is used to print the text on a input box.
+4. <textarea>..</textarea>
+   -It is used to create an input box which can accepts multiple lines of data in the form of input.
+   Attributes for TextArea:- rows and cols
+5. select and option tag:-
+- <select>...</select> :- It is a wrapper element for multiple options, but it can select only one option.
+- <option>...</option> :- It is used to print multiple options.
+
+# Semantics:-
+- Semantics are the tags used to create divisions inside the body tag.
+- There are two types of semantics available in HTML-
+1. Semantic tags
+- Semantic tags are the tags which have some particular meaning in their name.
+  eg:- header, footer, article, nav, section
+
+2. non-Semantic tags
+- The tags which don't have any particular meaning in their name are known as non-symantic tags.
+  eg:- div, span
