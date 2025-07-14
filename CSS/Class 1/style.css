@@ -1,0 +1,17 @@
+*{
+    background-color: aquamarine;
+    color: rgb(108, 8, 201);
+}
+.container p{
+    font-size: 30px;
+    color: cadetblue;
+    color: red;
+}
+.hero{
+    background-image: url("./dog.jpg");
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
