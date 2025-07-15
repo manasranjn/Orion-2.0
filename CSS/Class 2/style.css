@@ -1,0 +1,90 @@
+.head{
+    font-size: 40px;
+    color: blueviolet;
+    text-align: center;
+    
+}
+.head:hover{
+    color: red;
+    background-color: rgb(153, 171, 107);
+}
+#btn{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: red;
+    color: white;
+}
+#btn:active{
+    background-color: black;
+    color: white;
+}
+
+#input{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#input:focus{
+    background-color: whitesmoke;
+    color: brown;
+}
+
+#para{
+    font-size: 25px;
+    color: chocolate;
+}
+#para::first-letter{
+    font-size: 50px;
+    color: royalblue;
+}
+#para::first-line{
+    color: rgb(0, 255, 145);
+}
+#para::before{
+    content: "Hello ";
+    color: red;
+}
+#para::after{
+    content: " World";
+    color: red;
+}
+#input::placeholder{
+    color: red;
+}
+
+/* Box Model */
+.box{
+    background-color: blueviolet;
+    color: black;
+    height: 200px;
+    width: 300px;
+    padding: 30px;
+    /* padding: 10px 30px; */
+    /* padding: 10px 30px 50px; */
+    /* padding: 10px 30px 50px 100px; */
+    /* padding-right: 10px; */
+    /* border-width: 10px;
+    border-style: solid;
+    border-style: dotted;
+    border-style: double;
+    border-style: dashed;
+    border-color: cadetblue; */
+    border: 10px solid rgb(6, 163, 92);
+    margin: 20px;
+    /* margin: 10px 20px; */
+    /* margin: 10px 20px 30px; */
+    /* margin: 10px 20px 30px 40px; */
+    /* margin-top: 10px; */
+    border-radius: 20px;
+    /* border-radius: 50%; */
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+
+    box-shadow: 10px -10px 20px black;
+    text-shadow: 2px 2px 5px red;
+}

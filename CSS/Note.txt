@@ -111,3 +111,16 @@ e.g: border-radius: 5px;
 2. margin: top-bottom left-right
 3. margin: top left-right bottom
 4. margin: top right bottom left
+
+# Box shadow and Text shadow:-
+-Box shadow is used to give a shadow effect for a selected element. Whereas text shadow used for text.
+Syntax:-
+    box-shadow: x-offset y-offset blur color;
+    text-shadow: x-offset y-offset blud color;
+e.g:-
+    .box {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.text {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
