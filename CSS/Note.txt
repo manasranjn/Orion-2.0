@@ -124,3 +124,15 @@ e.g:-
 .text {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+# Display Properties:- 
+-It specifies how an element must be aligned or stuctured in a web-page.
+-There are 4-types of display properties.
+1. Block:- The elements that are block, will be displayed one by one & occupies 100% width of the web-page.
+-We can change the height and width of a block element.
+
+2. Inline:- The elements will be displayed in the same row where height and width properties will not work.
+
+3. Inline-block:- Displays all the element in the same row and also can change height and width. 
+
+4. None:- The element will not display in the web page.
