@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+.box{
+    background-color: brown;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* align-items: flex-start;
+    align-items: flex-end; */
+    gap: 10px;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+}
+.child{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    /* margin: 10px; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    background-color: crimson;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns:200px 150px 200px 300px ; */
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-columns: 2fr 1fr 2fr; */
+    /* grid-template-rows: 100px 200px 300px; */
+    grid-template-rows: repeat(3,1fr);
+    /* grid-gap: 10px; */
+}
+.first{
+    grid-row: span 3;
+
+}
+#second{
+    grid-column: span 2;
+}
