@@ -1,0 +1,103 @@
+.box{
+    /* height: 400px;
+    width: 400px; */
+    background-color: brown;
+    color: white;
+    /* height: 40vh; */
+    /* width: 40vw; */
+    /* width: 40%; */
+    /* font-size: 40%; */
+    height: 30vmax;
+    width: 30vmax;
+}
+img{
+    /* height: 50vmax; */
+    width: 100px;
+}
+.container{
+    font-size: 30px;
+    background-color: chocolate;
+}
+.content{
+    font-size: 1rem;
+    /* font-size: 1em; */
+    background-color: darkcyan;
+}
+
+.rotate{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    /* transform: rotateX(80deg); */
+    /* transform: rotateY(60deg); */
+    /* transform: rotateZ(60deg); */
+    transform: rotate(60deg);
+    color: white;
+}
+
+.scale{
+    height: 100px;
+    width: 100px;
+    margin: 80px;
+    background-color: blueviolet;
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+    /* transform: scale(2); */
+    transform: scale(2,1.5);
+    color: white;
+}
+
+.translate{
+    height: 100px;
+    width: 100px;
+    margin: 80px;
+    background-color: blueviolet;
+    /* transform: translateX(-100px); */
+    /* transform: translateY(-100px); */
+    transform: translate(100px, 100px);
+    color: white;
+}
+
+.skew{
+    height: 100px;
+    width: 100px;
+    margin: 80px;
+    background-color: rgb(30, 148, 0);
+    /* transform: skewX(30deg); */
+    /* transform: skewY(30deg); */
+    /* transform: skew(30deg, 30deg); */
+    color: white;
+}
+
+#btn{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 30px;
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+#btn:hover{
+    background-color: rgb(48, 203, 9);
+}
+#btn:active{
+    transform: scale(0.7);
+}
+#hero{
+    background-color: aquamarine;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    /* transition-property: transform;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s; */
+    transition: transform 4s;
+
+}
+#hero:hover{
+    transform: scale(3);
+}
