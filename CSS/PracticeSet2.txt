@@ -1,0 +1,23 @@
+1. Create a 3x2 grid layout using CSS Grid with 3 columns and 2 rows. Fill each grid cell with a colored box and some text.
+2. Build a simple image gallery using CSS Grid:
+Display 6 images in 3 columns
+Add gap between grid items
+3. Create a <div> with position: absolute and place it at the top-right corner of the page.
+4. Create a card layout using a <div> with a white background and apply a soft gray box-shadow to give a raised effect.
+5. Design three different shadow styles:
+-One with a sharp shadow
+-One with a blurred soft shadow
+-One with a top-left blured shadow
+6. Create a hover effect where the shadow becomes darker and offset increases when the user hovers over a box.
+7. Add a glowing text effect using text-shadow on an <h1> element.
+8. Create a box and use transform: rotate to tilt it diagonally.
+9. Scale an image using transform: scale(1.2) when the user hovers over it.
+10. Use transform: translateX() and translateY() to move an element from its original position.
+11. Create a button that smoothly changes its background color and font size when hovered.
+12. Build a box that expands in size (width & height) with smooth animation using transition.
+13. Create a div and when the user hovers over a card, it should move upward and scale slightly with a smooth effect.
+14. Create a sticky header using position: sticky that stays at the top while scrolling.
+15. Design a layout using different position values:
+-A fixed icon on the center-left (position: fixed)
+-An image placed absolutely at the bottom-right corner
+-A normal content section with position: relative
