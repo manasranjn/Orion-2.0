@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+}
+.box{
+    width: 1200px;
+    height: 600px;
+    background-color: blueviolet;
+}
+
+.hero{
+    display: flex;
+    padding: 40px;
+    background: linear-gradient(to bottom, white, #FFD5C3);
+    gap: 20px;
+}
+.left-content{
+    width: 50%;
+}
+#service{
+    color: orangered;
+    font-size: 22px;
+}
+#heading{
+    font-size: 45px;
+    width: 55%;
+    margin: 20px 0;
+    line-height: 45px;
+}
+#heading span{
+    color: orangered;
+
+}
+.description{
+    color: gray;
+    margin: 20px 0;
+    line-height: 25px;
+}
+#enquiry{
+    display: flex;
+    gap: 10px;
+}
+#enquiry button{
+    padding: 15px 30px ;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#enquiry span a{
+    text-decoration: none;
+    color: black;
+}
+.right-content{
+    width: 50%;
+}
+.right-content img{
+    width: 100%;
+    height: 350px;
+}
+
+
+
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    background-color: chocolate;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+    .box{
+        background-color: red;
+        width: 350px;
+        height: 300px;
+    }
+    .hero{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .left-content{
+        width: 100%;
+    }
+    #heading{
+        width: 100%;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .right-content{
+        width: 100%;
+    }
+
+}
+@media (min-width: 426px) and (max-width: 768px) {
+    .box{
+        background-color: green;
+        width: 500px;
+        height: 400px
+    }
+     .hero{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .left-content{
+        width: 100%;
+    }
+    #heading{
+        width: 100%;
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .right-content{
+        width: 100%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .box{
+        background-color: black;
+        width: 700px;
+        height: 500px
+    }
+    #heading{
+        width: 100%;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
