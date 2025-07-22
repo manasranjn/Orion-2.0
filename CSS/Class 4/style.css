@@ -56,7 +56,7 @@ nav ul a{
     grid-template-rows: repeat(3,1fr);
     /* grid-gap: 10px; */
 }
-.first{
+#first{
     grid-row: span 3;
 
 }

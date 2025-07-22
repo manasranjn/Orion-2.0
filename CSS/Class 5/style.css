@@ -27,11 +27,11 @@ img{
 .rotate{
     height: 100px;
     width: 100px;
-    background-color: blueviolet;
-    /* transform: rotateX(80deg); */
-    /* transform: rotateY(60deg); */
+    background-color: red;
+    /* transform: rotateX(70deg); */
+    /* transform: rotateY(30deg); */
     /* transform: rotateZ(60deg); */
-    transform: rotate(60deg);
+    /* transform: rotate(60deg); */
     color: white;
 }
 
@@ -43,7 +43,7 @@ img{
     /* transform: scaleX(2); */
     /* transform: scaleY(2); */
     /* transform: scale(2); */
-    transform: scale(2,1.5);
+    /* transform: scale(2,0.5); */
     color: white;
 }
 
@@ -51,10 +51,10 @@ img{
     height: 100px;
     width: 100px;
     margin: 80px;
-    background-color: blueviolet;
-    /* transform: translateX(-100px); */
+    background-color: orange;
+    /* transform: translateX(100px); */
     /* transform: translateY(-100px); */
-    transform: translate(100px, 100px);
+    /* transform: translate(100px, 100px); */
     color: white;
 }
 
@@ -91,11 +91,11 @@ img{
     margin: auto;
     height: 200px;
     width: 200px;
-    /* transition-property: transform;
-    transition-duration: 4s;
+    transition-property: transform;
+    transition-duration: 2s;
     transition-timing-function: ease-in-out;
-    transition-delay: 1s; */
-    transition: transform 4s;
+    /* transition-delay: 1s; */
+    /* transition: transform 4s; */
 
 }
 #hero:hover{
