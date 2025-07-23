@@ -1,0 +1,86 @@
+# JavaScript:-
+-JavaScript is a scripting and programming language, introduced to perform live-scripting or dynamic responsive on a web-page.
+-Netscape Communications hired 'Brendan Eich' to develop a scripting language for their browser, Netscape Navigator. Eich created JavaScript in just 10 days.
+-The language was first called "MOCHA", then LiveScript, and finally JavaScript—not because it's related to Java, but as a marketing decision to capitalize on Java’s popularity.
+-JavaScript is used for building logics of a web page.
+-JavaScript is a high level programming language, used in both client side as well as server side.
+-Currently we are using JavaScript version 6 i.e ES6(Echma script 6), which is also called as vanilla JavaScript.
+-Node JS is the run time environment of JavaScript.
+
+## What is Scripting language ?
+-A scripting language is a type of programming language used to automate tasks that executes line by line.
+-For example - JavaScript, Python, PHP... etc.
+
+# Variable Keywords in JS:-
+-Variable keywords are used to declare a variable and to initialize a value to variables.
+-There are three types of variable keywords:-
+    -var
+    -let
+    -const 
+## var:- If a variable is decalred using var keyword then we can re-declare and re-initialize the same variable.
+
+## let:- If a variable is decalred using let keyword then we can re-initialize the same variable but we can't re-declare the same variable.
+
+## const:- Const stands for constant variable.
+-If a variable is decalred using const keyword then neither we re-declare nor re-initialize the same variable.
+
+# Datatypes in JS:- 
+-Datatypes are used to define which type of value we're storing on a variable.
+- By using 'typeof' operator we can check the datatype of a varibale.
+-There are two types of datatypes in JavaScript:-
+    1.Primitive type
+    2.Non-primitive type
+Note:- JavaScript is a dynamic typed language that means, datatype of a variable is assigned based on the value passed by the user during runtime.
+
+1. Primitive-type:-
+## Number type:- Represents all the possible types of numeric values; like - positive, negative, fraction, whole number, etc..
+
+## String type:- Anything enclosed within single(' ') or double(" ") quote is known as string in JS.
+-Basically String is a sequence of character used to represent text.
+-We can access each character by using index numbers. string[0], string[1].... .
+
+## boolean type:- It has only two types of values, i.e true and false.
+-In JavaScript value of true is 1 and value of false is 0.
+
+## null type:- Null means nothing, which is inherited from Object type. It stores nothing.
+
+## undefined type:-When a variable is declared but not assigned a value, it is automatically initialized with undefined.
+
+## Symbol type:– Used for creating unique values (Symbol("unique"))
+-To create a Symbol type variable we need Symbol() operator.
+
+## BigInt type:– Handles very large numbers (BigInt())
+-To create a BigInt type varibale we need BigInt() operator.
+
+2. Non-primitive type or Reference Datatype
+-Reference datatypes are the type of datatype which can hold multiple element in a single variable.
+-Reference datatypes are -> array, object, function
+## Array :-Array is a collection of heterogenious(different datatypes) type of data.
+-Array indexing start from "0", and to access any value we can use the index position, and arrays are dynamic in size.
+-Arrays are used to store multiple values inside a single variable.
+ex. let arr = ["hari", "sita", "ram"] 0 1 2
+
+## Object :-Objects are complex data types used to store collection of key value pairs.
+-Objects can contain various datatypes, including primitive and non-primitive.
+-Keys are unique within an object, and they are used to access the values.
+-We can access the value of an object by using dot notation (object.keyName) or bracket notation (object["keyname"]).
+
+ex:-
+let obj = { name : "hari", 
+    phone : 56789032, 
+    address : "bhubaneswar" 
+    }
+-In the above example left side element are the keys & right side elements are the values of that key.
+
+# Function :-
+-functions are the block of code or set of instruction which are used to perform some specific task.
+-function reduce our code complexity and help organize logic, improve readability, and make code reusable.
+-We need 'function' keyword to create a function in JS.
+
+Syntax :-
+function functionName(){ 
+    //instruction
+ }
+
+function calling ->
+functionName();
