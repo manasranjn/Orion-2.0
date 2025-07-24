@@ -84,3 +84,37 @@ function functionName(){
 
 function calling ->
 functionName();
+
+# Operators in JS:- Operators are symbols used to perform operations on one or more variable and values.
+
+## Arithmetic Operator:-
+1. Addition (+): Adds two operands.
+2. Subtraction (-): Subtracts right operand from left operand.
+3. Multiplication (*): Multiplies two operands.
+4. Division (/): Divides left operand by right operand.
+5. Modulus (%): Returns the remainder of the division of left operand by right operand.
+6. Exponent (**): Used to raise a number to a power.
+
+## Assignment Operator:- 
+1. Simple Assignment (=): Assigns a value to a variable.
+2. Addition Assignment (+=): Adds the right operand to the left operand and assigns the result to left operand.
+3. Subtraction Assignment (-=): Subtracts the right operand from the left operand and assigns the result to left operand.
+4. Multiplication Assignment (*=): Multiplies the left operand by the right operand and assigns the result to left operand.
+5. Division Assignment (/=): Divides the left operand by the right operand and assigns the result to left operand.
+6. Remainder Assignment (%=): Assigns the remainder of division between left and right operands to left operand.
+7. Exponentiation Assignment (**=): Raises the left operand to the power of the right operand and assigns the result to left operand.
+
+## Comparision Operator:- 
+1. Equal to (==): Compares if two operands are equal.
+2. Not equal to (!=): Compares if two operands are not equal.
+3. Strict equal to (===): Compares if two operands are equal and of the same data type.
+4. Strict not equal to (!==): Compares if two operands are not equal and of the same data type.
+5. Greater than (>): Checks if left operand is greater than right operand.
+6. Less than (<): Checks if left operand is greater than or equal to right operand.
+7. Greater than equal to (>=): Checks if left operand is greater than or equal to right operand.
+8. Less than equal to (<=): Checks if left operand is less than or equal to right operand.
+
+## Logical Opercators :-
+1. Logical AND (&&): Returns true if both operands are true.
+2. Logical OR (||): Returns true if either of the operands is true.
+3. Logical NOT (!): Returns the opposite of the operand's boolean value.
