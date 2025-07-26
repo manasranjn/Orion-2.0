@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #F5F5F5;
+    padding: 0 50px;
+}
+header .logo img{
+    height: 25px;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+}
+.links ul a{
+    list-style: none;
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+.border{
+    border-right: 2px solid black;
+}
+
+nav{
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+nav #logo img{
+    height: 50px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+nav .buttons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+nav .search{
+    position: relative;
+}
+nav .buttons i{
+    font-size: 20px;
+}
+nav .search i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-size: 16px;
+}
+nav .search input{
+    padding: 10px 0px 10px 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #F5F5F5;
+}
+#bars{
+    display: none;
+}
+.info{
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 10px;
+}
+.info h5{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.info a{
+    color: black;
+    font-size: 14px;
+}
+.banner img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.look-of-football{
+    text-align: center;
+    padding: 40px;
+}
+#field{
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.look-of-football button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+#featured {
+    font-size: 25px;
+    padding: 20px 50px;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#box1{
+    background-image: url("./grid1.avif");
+}
+#box2{
+    background-image: url("./grid2.avif");
+}
+#box3{
+    background-image: url("./grid3.avif");
+}
+#box4{
+    background-image: url("./grid4.avif");
+}
+.box{
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.content{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+    header{
+        display: none;
+    }
+        nav{
+        padding: 0 10px;
+    }
+    nav ul{
+       display: none;
+    }
+    nav input{
+        display: none;
+    }
+    #bars{
+        display: block;
+    }
+    nav .search i{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.banner img{
+    height: 90vh;   
+    width: 100%;
+}
+.look-of-football{
+    text-align: left;
+    padding: 20px;
+}
+#field{
+    font-size: 35px;
+}
+    
+}
+@media (min-width: 451px) and (max-width: 768px) {
+    header{
+        display: none;
+    }
+    nav{
+        padding: 0 10px;
+    }
+    nav ul{
+       display: none;
+    }
+    nav input{
+        display: none;
+    }
+    #bars{
+        display: block;
+    }
+    nav .search i{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.banner img{
+    height: 60vh;   
+    width: 100%;
+}
+#field{
+    font-size: 45px;
+}
+}
