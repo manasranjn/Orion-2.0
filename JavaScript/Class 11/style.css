@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 60px;
+    background-color: #F5F5F5;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#navbar div {
+    display: flex;
+    gap: 10px;
+}
+
+#navbar div button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+#navbar div button:active {
+    transform: scale(0.9);
+}
+
+#signin {
+    background-color: black;
+    color: white;
+}
+
+#signup {
+    background-color: white;
+    color: black;
+}
+
+#menu {
+    display: none;
+}
+
+#mobilelinks {
+    display: none;
+    background-color: blanchedalmond;
+    width: 50%;
+    height: 80vh;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 20px;
+}
+
+#mobilelinks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+#mobilelinks a {
+    text-decoration: none;
+    color: black;
+}
+
+.slider {
+    width: 100%;
+    height: 85vh;
+    background-color: #F5F5F5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.box {
+    background-image: url("./seaside-promenade-7422541_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 90vw;
+    position: relative;
+    border-radius: 10px;
+}
+
+.content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card {
+    height: 300px;
+    width: 350px;
+    position: relative;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.details {
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+    height: 150px;
+    width: 180px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar #navlinks {
+        display: none;
+    }
+
+    #navbar div {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+
+}
