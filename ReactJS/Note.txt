@@ -1,0 +1,142 @@
+## Types of Components
+- There are 2 types of components in react.
+  1. Class Based Component
+  2. Functional Component or Function Based Component
+
+# Difference between Class Component and Functional Component
+- Class Component :-
+  - Use class keyword and class name
+  - Statefull
+  - It has no Hooks
+  - It has lifecycle methods
+  - It use render() method
+  - Syntax:
+    import React from "react";
+    import { Component } from "react";
+
+class ClassComponentName extends Component {
+render() {
+return (
+
+<div>
+<h1>Class Component</h1>
+</div>
+);
+}
+}
+export default ClassComponent;
+
+- Functional Component :-
+  - Use function keyword and function name
+  - Stateless
+  - It has Hooks
+  - It doesn't have lifecycle methods
+  - It doesn't use render() method
+  - Syntax:
+    import React from "react";
+    const Navbar = () => {
+    return (
+    <div>
+    <h1>Navbar</h1>
+    </div>
+    );
+    };
+
+export default Navbar;
+
+# Props
+- Props are inbuilt features of react.
+- Props are used to pass data from parent to child component.
+- Props are immutable, it means once the value is passed from parent component, it can't be changed.
+- Props are uni-directional.
+
+e.g :-
+- Write a program to send a string data as props.
+  App.jsx :
+  import React from "react";
+  import Content from "./Components/Content";
+
+const App = () => {
+return (
+
+<div>
+<Content name="Rahul" />
+</div>
+);
+};
+
+export default App;
+
+Content.jsx :
+import React from "react";
+const Content = (props) => {
+return (
+
+<div>
+<h1>{props.name}</h1>
+</div>
+);
+};
+export default Content;
+
+- Write a program to send an array as props.
+  App.jsx :
+  import React from "react";
+  import Content from "./Components/Content";
+
+const App = () => {
+return (
+
+<div>
+<Content mark={[1, 2, 3, 4, 5]} />
+</div>
+)
+};
+
+export default App;
+
+Content.jsx :
+import React from "react";
+const Content = ({mark}) => {
+return (
+
+<div>
+<h1>
+      Mark: 
+        {mark.map((item) => (
+          <p>{item}</p>
+        ))}
+      </h1>
+</div>
+);
+};
+export default Content;
+
+- Write a program to send an object as props.
+  App.jsx :
+  import React from "react";
+  import Content from "./Components/Content";
+
+const App = () => {
+return (
+
+<div>
+<Content name={{ firstName: "Rahul", lastName: "Gupta" }} />
+</div>
+);
+};
+
+export default App;
+
+Content.jsx :
+import React from "react";
+const Content = (props) => {
+return (
+
+<div>
+<h1>{props.name.firstName}</h1>
+<h1>{props.name.lastName}</h1>
+</div>
+);
+};
+export default Content;
