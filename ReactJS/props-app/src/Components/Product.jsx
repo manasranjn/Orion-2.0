@@ -4,7 +4,6 @@ const Product = ({ name, price, rating, description }) => {
   // console.log(props);
 
   // const { name, price, rating, description } = props;
-
   return (
     // <div
     //   style={{
