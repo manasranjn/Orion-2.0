@@ -1,0 +1,16 @@
+#content {
+    background-color: cornflowerblue;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+#heading {
+    text-align: center;
+    color: green;
+}
+
+.paragraph {
+    text-align: center;
+    color: white;
+}
