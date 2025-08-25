@@ -5,6 +5,8 @@ import GlobalCSS from "./Components/GlobalCSS";
 import "./style.css";
 import Contents from "./Components/Contents";
 import Product from "./Components/Product";
+import ListData from "./Components/ListData";
+import ListEffect from "./Components/ListEffect";
 
 const App = () => {
   return (
@@ -15,7 +17,9 @@ const App = () => {
       <GlobalCSS />
       <Contents /> */}
 
-      <Product />
+      {/* <Product /> */}
+      {/* <ListData /> */}
+      <ListEffect />
     </div>
   );
 };
