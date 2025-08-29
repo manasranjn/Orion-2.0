@@ -393,6 +393,7 @@ console.log(name);
 
 return (
 
+
 <form>
 <input type="text" placeholder="First Name" ref={fName} />
 <input type="text" placeholder="Last Name" ref={lName} />
