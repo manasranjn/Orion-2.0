@@ -401,3 +401,79 @@ return (
 </form>
 )};
 export default UncontrolledForm;
+
+## Controlled Form
+- Thse forms are created using states in React.
+- In functional component we use useState() to create controlled forms.
+- These Forms are completely handled by developers where we will be taking the data from the users by using "onChange" event.
+  example:-
+  import React, { useState } from "react";
+
+const ControlledForm = () => {
+const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+
+const getName = (e) => {
+setName(e.target.value);
+};
+const getEmail = (e) => {
+setEmail(e.target.value);
+};
+const submitData = (e) => {
+e.preventDefault();
+let data = {
+name: name,
+email: email,
+password: password,
+};
+console.log(data);
+setEmail("");
+setName("");
+setPassword("");
+};
+return (
+
+<form>
+<label>Name: </label>
+<input type="text" value={name} onChange={getName} /> <br />
+<label>Email: </label>
+<input type="email" value={email} onChange={getEmail} /> <br />
+<label>Password: </label>
+<input
+type="password"
+value={password}
+onChange={(e) => setPassword(e.target.value)}
+/>
+<br />
+<button onClick={submitData}>Submit</button>
+</form>
+)};
+export default ControlledForm;
+
+# useContext():-
+- Context is a way to share data between components without having to pass props down the component tree.
+- useContext() is a hook that allows you to consume context values in your functional components.
+- To create a context, use the createContext() method. This returns a Context object that can be used to provide and consume values.
+- To provide a value to a child component, use the "Context.Provider" component. This component accepts a value prop that is passed down to child components.
+- To consume a value in a child component, use the useContext() hook. This hook takes a Context object as its argument and returns the current value of the context.
+- We can use multiple context values in a single component by nesting
+  Context.Provider components.
+- Overuse of context can make our code harder to understand and maintain.
+
+# React Router-
+## What is a Router in React JS -
+A router in React JS is a library that allows us to navigate between different pages or views within a single-page application (SPA). It manages the URLs of your application and maps them to the appropriate components to render.
+
+## Why do we need Router in React JS
+- A router is needed in React JS to provide a seamless user experience when navigating through different parts of a SPA. Without a router, you would have to manually manage the state of the application and manually render different components based on the current URL.
+
+## How to use Router in React JS
+- To use a router in React JS, you need to first install a router library such as "react-router-dom" using a package manager like npm. Once installed, you can import the necessary components from the library, such as "BrowserRouter", "Routes", "Route", and "Link", and use them in your React components to define the routes and navigation behaviour of your application.
+- "BrowserRouter" is a component that should wrap your entire application and provides the history and location objects to your components. The history object keeps track of the browser's history, and the location object contains information about the current URL.
+- "Routes" is a component that wraps multiple Route components and renders Route that matches the current URL.
+- "Route" is a component that defines a route in your application. You can specify the path for the route and the component that should be rendered when the route is matched.
+- "Link" is a component that provides declarative, accessible navigation around your application. It creates an HTML anchor tag with the appropriate href attribute based on the specified path.
+- Nested-Routes - You can also define nested routes in React JS by using the Route component inside another Route component. This allows you to create more complex routes and nested navigation in your application.
+- Route Parameters - You can also define route parameters in React JS by adding a colon followed by a parameter name in the path of the Route component. The parameter value can then be accessed in the component that is rendered for that route.
+- Route-Guards - You can also add route guards in React JS to protect certain routes from being accessed by unauthorized users. This can be done by adding a function that checks if the user is authenticated before allowing access to the route.
