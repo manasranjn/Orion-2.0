@@ -6,19 +6,21 @@ const CreatePost = () => {
   const [description, setDescription] = useState("");
   const [alert, setAlert] = useState("");
   const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
 
   //   console.log(title, description);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (!title || !description) {
       setAlert("Please fill all the fields");
       return;
     }
 
     const post = {
-      title,
-      description,
+      title, //title: value
+      description, //description: value
     };
 
     axios
@@ -26,17 +28,22 @@ const CreatePost = () => {
       .then((res) => {
         console.log("Post Created", res);
         setSuccess("Post Created Successfully");
+        setAlert("");
+        setError("");
         setTitle("");
         setDescription("");
       })
       .catch((err) => {
         console.log(err);
+        setError("Something went wrong");
+        setSuccess("");
+        setAlert("");
       });
   };
 
   return (
     <div className="h-[90vh] bg-[#D3DAD9] p-8 md:p-12 lg:p-20 flex justify-center items-center">
-      <form className="bg-slate-500 p-8 rounded shadow flex flex-col gap-4 min-w-xl">
+      <form className="bg-slate-500 p-8 rounded shadow flex flex-col gap-4 min-w-[90vw] md:min-w-xl">
         <h1 className="text-3xl text-center text-white mb-4">Create Post</h1>
         <input
           type="text"
@@ -67,6 +74,10 @@ const CreatePost = () => {
 
         {success && (
           <p className="text-green-500 text-xl text-center">{success}</p>
+        )}
+
+        {error && (
+          <p className="text-orange-500 text-xl text-center">{error}</p>
         )}
       </form>
     </div>

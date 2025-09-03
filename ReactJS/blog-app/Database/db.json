@@ -1,14 +1,9 @@
 {
   "posts": [
     {
-      "id": "7394",
-      "title": "In Punjab floods, a 1988 redux",
-      "description": "Climate change, choked drains, encroached floodplains to deforestation and concretisation: Multiple studies point to several such human activities that worsened floods"
-    },
-    {
-      "id": "c775",
-      "title": "The success of AI music creators sparks",
-      "description": "When pop groups and rock bands practice or perform, they rely on their guitars, keyboards and drumsticks to make music. Oliver McCann, a British AI music creator who goes by the stage name imoliver, fires up his chatbot. McCann’s songs span a range of genres, from indie-pop to electro-soul to country-rap. There’s just one crucial difference between McCann and traditional musicians"
+      "title": "In Punjab floods, a 1988",
+      "description": "Climate change, choked drains, encroached floodplains to deforestation and concretisation: Multiple studies point to several such human activities that worsened floods",
+      "id": "7394"
     },
     {
       "id": "f300",
