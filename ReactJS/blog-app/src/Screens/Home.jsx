@@ -30,26 +30,32 @@ const Home = () => {
     <div className="h-screen bg-[#D3DAD9] p-8 md:p-12 lg:p-20 ">
       {error && <p className="text-red-500">{error}</p>}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 ">
         {allPosts.map((post) => (
           <div
-            className="bg-[#5D688A] text-white p-8 rounded shadow"
+            className="bg-[#5D688A] text-white p-8 rounded shadow relative"
             key={post.id}
           >
             <h3 className="text-2xl mb-3 font-semibold">
               Title : {post.title}
             </h3>
-            <p className="text-gray-200 hover:text-blue-200">
-              <Link to={`/post-details/${post.id}`}>
-                Description : {post.description.slice(0, 150) + "..."}
+            <p className="text-gray-200 mb-12">
+              Description: {post.description.slice(0, 150)}{" "}
+              <Link to={`/post-details/${post.id}`} className="text-blue-500">
+                Read More
               </Link>
+              {/* <Link to={`/post-details/${post.id}`}>
+                Description : {post.description.slice(0, 150) + "Read More"}
+              </Link> */}
             </p>
-            <button
-              onClick={() => navigate(`/post-details/${post.id}`)}
-              className="bg-blue-500 hover:bg-blue-400 active:bg-blue-600 active:scale-95 transition duration-200 cursor-pointer py-2 w-full text-white text-xl rounded mt-4"
-            >
-              See More
-            </button>
+            <div className="absolute bottom-0 left-8 right-8">
+              <button
+                onClick={() => navigate(`/post-details/${post.id}`)}
+                className="my-5 bg-blue-500 hover:bg-blue-400 active:bg-blue-600 active:scale-95 transition duration-200 cursor-pointer py-2 w-full text-white text-xl rounded mt-4"
+              >
+                See More
+              </button>
+            </div>
           </div>
         ))}
       </div>

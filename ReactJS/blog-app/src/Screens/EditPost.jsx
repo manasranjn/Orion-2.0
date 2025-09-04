@@ -38,10 +38,11 @@ const EditPost = () => {
       description,
     };
     axios
-      .put(`http://localhost:5000/posts${para.id}`, post)
+      .put(`http://localhost:5000/posts/${para.id}`, post)
       .then((res) => {
         console.log(res.data);
         navigate(`/post-details/${para.id}`);
+        setAlert("");
       })
       .catch((err) => {
         console.log(err);

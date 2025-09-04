@@ -2,13 +2,18 @@
   "posts": [
     {
       "title": "In Punjab floods, a 1988",
-      "description": "Climate change, choked drains, encroached floodplains to deforestation and concretisation: Multiple studies point to several such human activities that worsened floods",
+      "description": "Climate change, choked drains, encroached floodplains to deforestation and concretisation: Multiple studies point to several such human activities that worsened flood",
       "id": "7394"
     },
     {
       "id": "f300",
       "title": "OpenAI plans India data center",
       "description": "OpenAI, backed by Microsoft (MSFT.O), opens new tab, has formally registered as a legal entity in India and has begun building a local team. The company said in August it plans to open its first India office in New Delhi later this year, expanding its presence in its second-largest market by user base."
+    },
+    {
+      "id": "2538",
+      "title": "Title",
+      "description": "Description"
     }
   ]
 }
