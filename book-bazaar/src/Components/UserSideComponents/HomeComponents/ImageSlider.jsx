@@ -53,7 +53,7 @@ const ImageSlider = () => {
           <button
             key={idx}
             onClick={() => setCurrentIndex(idx)}
-            className={`w-3 h-3 rounded-full ${
+            className={`w-3 h-3 rounded-full cursor-pointer ${
               idx === currentIndex ? "bg-blue-500" : "bg-gray-300"
             }`}
           ></button>
