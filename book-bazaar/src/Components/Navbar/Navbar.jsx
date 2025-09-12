@@ -4,7 +4,7 @@ import BottomNavbar from "./BottomNavbar";
 
 const Navbar = () => {
   return (
-    <div className="shadow-lg ">
+    <div className="shadow-lg sticky top-0 z-50 bg-white">
       <TopNavbar />
       <BottomNavbar />
     </div>

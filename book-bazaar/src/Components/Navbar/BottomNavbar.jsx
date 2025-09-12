@@ -24,7 +24,7 @@ const BottomNavbar = () => {
           <li className="hover:bg-blue-100 rounded-full px-4 py-2">
             Historical Fiction
           </li>
-          <li className="hover:bg-blue-100 rounded-full px-4 py-2 flex gap-2 items-center cursor-pointer">
+          <li className="hover:bg-blue-100 rounded-full px-4 py-2 flex gap-2 items-center cursor-pointer mr-3">
             More Categories <RiArrowDropDownLine size={22} />
           </li>
         </ul>

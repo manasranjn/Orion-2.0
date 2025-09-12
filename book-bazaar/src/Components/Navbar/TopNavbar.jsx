@@ -4,16 +4,24 @@ import { IoSearch } from "react-icons/io5";
 import { FaCartArrowDown } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import AuthModal from "../../Screens/nonAuth/AuthModal";
+import Cart from "../Common/Cart";
 
 const TopNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div>
       {/* Navbar for Large Screens */}
       <div className="hidden lg:flex p-2 items-center justify-between mx-10 xl:mx-20">
-        <div className="flex gap-2 items-center">
+        <div
+          className="flex gap-2 items-center cursor-pointer"
+          onClick={() => navigate("/")}
+        >
           <img src={logo} alt="Logo" className="h-14" />
           <h1 className="text-2xl font-semibold">Book Bazaar</h1>
         </div>
@@ -28,21 +36,34 @@ const TopNavbar = () => {
             <IoSearch className="absolute right-4 text-gray-600" />
           </div>
 
-          <button className="bg-blue-600 text-white px-5 py-2 rounded-full cursor-pointer hover:bg-blue-700 active:scale-95 transition duration-200">
-            Sell Your Books
-          </button>
+          <Link to="/sell-your-books">
+            <button className="bg-blue-600 text-white px-5 py-2 rounded-full cursor-pointer hover:bg-blue-700 active:scale-95 transition duration-200">
+              Sell Your Books
+            </button>
+          </Link>
 
           <ul className="flex gap-5 items-center text-lg">
             <li className="hover:text-blue-600 hover:font-semibold cursor-pointer">
-              About
+              <Link to="/about">About</Link>
             </li>
-            <li className="hover:text-blue-600 hover:font-semibold cursor-pointer">
+            <li
+              className="hover:text-blue-600 hover:font-semibold cursor-pointer"
+              onClick={() => setIsCartOpen(true)}
+            >
               <FaCartArrowDown size={25} />
             </li>
-            <li className="hover:text-blue-600 hover:font-semibold cursor-pointer">
+            <li
+              onClick={() => setIsModalOpen(true)}
+              className="hover:text-blue-600 hover:font-semibold cursor-pointer"
+            >
               Login
             </li>
           </ul>
+          <Cart isCartOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+          <AuthModal
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+          />
         </div>
       </div>
 
