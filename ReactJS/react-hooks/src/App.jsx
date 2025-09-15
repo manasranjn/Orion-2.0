@@ -30,9 +30,9 @@ const App = () => {
         ]}
       /> */}
 
-      {/* <TodoApp /> */}
+      <TodoApp />
 
-      <Counter />
+      {/* <Counter /> */}
     </div>
   );
 };
