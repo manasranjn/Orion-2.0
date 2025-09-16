@@ -7,7 +7,7 @@ import {
 const MODEL_NAME = "gemini-2.0-flash";
 
 // Paste Your API KEY Below
-const API_KEY = "paste key";
+const API_KEY = "AIzaSyBVzujv1SMFLBB1YSL9fYMKtvIvS9i-feQ";
 // api-key = AIzaSyBVzujv1SMFLBB1YSL9fYMKtvIvS9i-feQ
 
 async function runChat(prompt) {

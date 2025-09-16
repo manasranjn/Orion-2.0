@@ -30,6 +30,8 @@ const ContextProvider = (props) => {
       setRecentPrompt(input);
       response = await runChat(input);
     }
+    // console.log(response);
+
     let responseArray = response.split("**");
     let newArray = "";
     for (let i = 0; i < responseArray.length; i++) {
