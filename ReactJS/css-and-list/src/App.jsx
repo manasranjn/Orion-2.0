@@ -7,6 +7,7 @@ import Contents from "./Components/Contents";
 import Product from "./Components/Product";
 import ListData from "./Components/ListData";
 import ListEffect from "./Components/ListEffect";
+import Pagination from "./Components/Pagination";
 
 const App = () => {
   return (
@@ -19,7 +20,9 @@ const App = () => {
 
       {/* <Product /> */}
       {/* <ListData /> */}
-      <ListEffect />
+      {/* <ListEffect /> */}
+
+      <Pagination />
     </div>
   );
 };
